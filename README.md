@@ -1,30 +1,55 @@
-# 🚗 Car Marketplace
+# MAKINA 🚗
 
-A PHP-based car marketplace web application with role-based access control for Admins, Sellers, and Customers.
+> Ethiopia's premier automotive marketplace — buy and sell premium vehicles with ease.
 
-## Features
+![Login](screenshots/login.png)
+
+## ✨ Features
 
 ### 🔐 Authentication
-- User registration and login
+- User registration and login with role selection
 - Session-based authentication
-- Role-based redirection after login
+- Auto-redirect after login based on role
 
 ### 👤 Roles
 
 | Role | Capabilities |
 |------|-------------|
-| **Admin** | View all users, block/unblock users, delete users |
-| **Seller** | Add, edit, delete car listings; manage profile |
-| **Customer** | Browse car listings, view car details |
+| **Admin** | View all users, block/unblock, delete accounts |
+| **Seller** | Add, edit, delete car listings; manage profile & portfolio |
+| **Customer** | Browse listings, search by brand/model/year, view car details & contact seller |
 
-## Tech Stack
+---
+
+## 📸 Screenshots
+
+### Sign Up
+![Sign Up](screenshots/sing_up.png)
+
+### Admin Dashboard
+![Admin](screenshots/admin.png)
+
+### Seller Profile
+![Seller](screenshots/saler.png)
+
+### Available Cars (Customer View)
+![Customer](screenshots/custemer.png)
+
+### Car Details
+![Car Details](screenshots/custemer_view.png)
+
+---
+
+## 🛠 Tech Stack
 
 - **Backend:** PHP (MVC Architecture)
-- **Database:** MySQL (via custom `Database` class)
+- **Database:** MySQL
 - **Session Management:** PHP native sessions
 - **Frontend:** PHP-rendered views
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
 ├── index.php                  # Front controller / router
@@ -34,43 +59,47 @@ A PHP-based car marketplace web application with role-based access control for A
 │   ├── User.php
 │   └── Car.php
 ├── controllers/
-│   ├── AuthController.php     # Login, signup, logout
-│   ├── AdminController.php    # User management
-│   ├── SellerController.php   # Car listing management
-│   ├── CustomerController.php # Browse listings
-│   └── PageController.php     # Static pages (About, etc.)
-└── views/                     # (your view files here)
+│   ├── AuthController.php
+│   ├── AdminController.php
+│   ├── SellerController.php
+│   ├── CustomerController.php
+│   └── PageController.php
+└── views/
 ```
 
-## Getting Started
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 - PHP 7.4+
 - MySQL
-- Apache or Nginx (or use PHP's built-in server)
+- Apache or Nginx (or PHP's built-in server)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/your-username/makina.git
+   cd makina
    ```
 
 2. **Set up the database**
    - Create a MySQL database
-   - Import the SQL schema (add your schema file path here)
-   - Update `config/Database.php` with your DB credentials
+   - Import the SQL schema file
+   - Update `config/Database.php` with your credentials
 
 3. **Run the app**
    ```bash
    php -S localhost:8000
    ```
-   Then open [http://localhost:8000](http://localhost:8000) in your browser.
+   Open [http://localhost:8000](http://localhost:8000)
 
-## Routing
+---
 
-All requests go through `index.php` using the `?action=` query parameter.
+## 🔀 Routing
+
+All requests go through `index.php` via `?action=` query parameter.
 
 | Action | Description |
 |--------|-------------|
@@ -84,10 +113,11 @@ All requests go through `index.php` using the `?action=` query parameter.
 | `carDetails` | Customer: view car details |
 | `about` | About page |
 
+---
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first.
 
-## License
+## 👨‍💻 Author
 
-[MIT](LICENSE)
+Built by [Nebyou](https://github.com/your-123neba)
