@@ -118,6 +118,10 @@ All requests go through `index.php` via `?action=` query parameter.
 
 Pull requests are welcome. For major changes, please open an issue first.
 
+<<<<<<< HEAD
 ## 👨‍💻 Author
 
 Built by [Nebyou](https://github.com/your-123neba)
+=======
+
+>>>>>>> ab746a41f07d4139cfdcd3bdcd56782e3b018de3
