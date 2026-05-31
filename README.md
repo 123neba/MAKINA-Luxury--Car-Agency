@@ -24,7 +24,7 @@
 ## 📸 Screenshots
 
 ### Sign Up
-![Sign Up](screenshots/Sign_up.png)
+![Sign Up](screenshots/Signup.png)
 
 ### Admin Dashboard
 ![Admin](screenshots/Admin.png)
@@ -36,7 +36,7 @@
 ![Customer](screenshots/Customer.png)
 
 ### Car Details
-![Car Details](screenshots/Car Details.png)
+![Car Details](screenshots/Car_Details.png)
 
 ---
 
